@@ -20,9 +20,8 @@ class Project(object):
 
     def login(self):
         user_name = input("Please Enter User Name")
-        user_pass = input("Please Enter You Password")
+        user_pass = input("Please Enter Your Password")
 
         if user_name in self.user_details:
             if user_pass == self.user_details[user_name]['password']:
                 self.session.update(self.user_details)
-                
